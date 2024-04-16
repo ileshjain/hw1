@@ -215,20 +215,29 @@ INSERT INTO moviecast
 ;
 -- The SQL statement for the movies output
 
-SELECT 
-    movies.name, 
-    movies.year_released, 
-    movies.mpaa_rating, 
-    studios.name 
+SELECT
+    movies.name,
+    movies.year_released,
+    movies.mpaa_rating,
+    studios.name
 FROM 
-    movies JOIN studios ON movies.studio_id = studios.id
+    movies INNER JOIN studios ON movies.studio_id = studios.id;
 
 -- Prints a header for the cast output
 .print ""
 .print "Top Cast"
 .print "========"
 .print ""
-
+;
 
 -- The SQL statement for the cast output
--- TODO!
+SELECT
+    movies.name, 
+    actors.name,
+    moviecast.character_name
+FROM 
+    moviecast 
+    INNER JOIN movies ON movies.id = moviecast.movie_id
+    INNER JOIN actors on actors.id = moviecast.actor_id
+;
+
