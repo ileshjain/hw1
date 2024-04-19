@@ -182,8 +182,9 @@ INSERT INTO actors
     ("Heath Ledger"),
     ("Aaron Eckhart"),
     ("Maggie Gyllenhaal"),
-    ("Gary Oldman"),
-    ("Tom Hardy")
+    ("Tom Hardy"),
+    ("Joseph Gordon-Levitt"),
+    ("Anne Hathaway")
 ;
 
 INSERT INTO moviecast
@@ -205,7 +206,9 @@ INSERT INTO moviecast
         (2,8,"Rachel Dawes"),
         (3,1,"Bruce Wayne"),
         (3,5,"Commissioner Gordon"),
-        (3,9,"Bane")
+        (3,9,"Bane"),
+        (3,10,"John Blake"),
+        (3,11,"Selina Kyle")
 ;
 
 -- Prints a header for the movies output
